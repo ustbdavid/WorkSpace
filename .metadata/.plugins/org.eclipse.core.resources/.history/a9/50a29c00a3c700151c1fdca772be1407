@@ -1,0 +1,8 @@
+import unittest
+from language import *
+import unittest
+
+class CLangTestCase(unittest.TestCase):
+    def testfilter(self):
+        name1 = "xx.c"
+        self.fail

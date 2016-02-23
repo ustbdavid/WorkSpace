@@ -1,0 +1,61 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Work\WorkSpace\.metadata\.plugins\org.eclipse.core.resources\.projects\Mark\com.python.pydev.analysis\v2_indexcache
+com.mark.rules|1452984851957177000|C:\Work\WorkSpace\Mark\com\mark\rules.py
+com.mark.utils.util|1452552410275847000|C:\Work\WorkSpace\Mark\com\mark\utils\util.py
+com.__init__|1452551006742324000|C:\Work\WorkSpace\Mark\com\__init__.py
+com.mark.utils.__init__|1452551069994783000|C:\Work\WorkSpace\Mark\com\mark\utils\__init__.py
+com.mark.__init__|1452551006748304000|C:\Work\WorkSpace\Mark\com\mark\__init__.py
+com.mark.handlers|1453241724465390000|C:\Work\WorkSpace\Mark\com\mark\handlers.py
+com.mark.Markup|1453241875162581000|C:\Work\WorkSpace\Mark\com\mark\Markup.py
+com.mark.utils.simple_markup|1452722758939703000|C:\Work\WorkSpace\Mark\com\mark\utils\simple_markup.py
+-- END DISKCACHE
+-- START DICTIONARY
+15
+13=HTMLRender
+5=com.mark.rules
+15=TitleRule.condition
+1=com.mark.Markup
+9=Handler
+6=Parser
+11=TitleRule
+2=com.mark.utils.util
+7=BasicTextParser
+4=com.mark.handlers
+14=Parser.__init__
+3=com.mark.utils.simple_markup
+8=Rule
+10=HeadingRule
+12=ParagraphRule
+-- END DICTIONARY
+-- START TREE 1
+10
+bas|1|BasicTextParser!9@
+blo|2|blocks!18@block!27@
+han|2|Handler!33@handler!11@
+hea|1|HeadingRule!41@
+htm|1|HTMLRender!33@
+lin|1|lines!18@
+par|3|Parser!9@parser!11@ParagraphRule!41@
+rul|1|Rule!41@
+tit|2|TitleRule!41@title!27@
+xxx|1|xxx!10@
+-- END TREE
+-- START TREE 2
+15
+__i|2|__init__!6&10@__init__!7&10@
+act|1|action!8&42@
+add|2|addRule!6&10@addFilter!6&10@
+cal|1|callback!9&34@
+con|3|condition!10&42@condition!11&42@condition!12&42@
+end|5|end_heading!13&34@end!9&34@end_document!13&34@end_paragraph!13&34@end_title!13&34@
+fee|1|feed!13&34@
+fil|1|filters!14&11@
+fir|2|first!11&43@first!15&43@
+han|1|handler!14&11@
+par|1|parse!6&10@
+rul|1|rules!14&11@
+sta|5|start_document!13&34@start_heading!13&34@start_title!13&34@start!9&34@start_paragraph!13&34@
+sub|2|sub_emphasis!13&34@sub!9&34@
+typ|3|type!10&43@type!11&43@type!12&43@
+-- END TREE

@@ -1,0 +1,129 @@
+This is com.mark.utils
+import re, sys
+from utils.util import blocks
+from rules import TitleRule, HeadingRule, ParagraphRule
+from handlers import HTMLRender
+import fileinput
+from __builtin__ import str
+block =  import re, sys
+from utils.util import blocks
+from rules import TitleRule, HeadingRule, ParagraphRule
+from handlers import HTMLRender
+import fileinput
+from __builtin__ import str type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+import re, sys
+from utils.util import blocks
+from rules import TitleRule, HeadingRule, ParagraphRule
+from handlers import HTMLRender
+import fileinput
+from __builtin__ import str
+def xxx(match):
+    return match.group(0)
+block =  def xxx(match):
+    return match.group(0) type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+def xxx(match):
+    return match.group(0)
+class Parser:
+    def __init__(self, handler):
+        self.handler = handler
+        self.rules = []
+        self.filters = []
+block =  class Parser:
+    def __init__(self, handler):
+        self.handler = handler
+        self.rules = []
+        self.filters = [] type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+class Parser:
+    def __init__(self, handler):
+        self.handler = handler
+        self.rules = []
+        self.filters = []
+def addRule(self, rule):
+        self.rules.append(rule)
+block =  def addRule(self, rule):
+        self.rules.append(rule) type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+def addRule(self, rule):
+        self.rules.append(rule)
+def addFilter(self, pattern, name):
+        def textFilter(block, handler):
+            print "block = ", block, "type = ", type(block)
+            #block = 'xxx'
+            return re.sub(pattern, handler.sub(name), block)
+        self.filters.append(textFilter)
+block =  def addFilter(self, pattern, name):
+        def textFilter(block, handler):
+            print "block = ", block, "type = ", type(block)
+            #block = 'xxx'
+            return re.sub(pattern, handler.sub(name), block)
+        self.filters.append(textFilter) type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+def addFilter(self, pattern, name):
+        def textFilter(block, handler):
+            print "block = ", block, "type = ", type(block)
+            #block = 'xxx'
+            return re.sub(pattern, handler.sub(name), block)
+        self.filters.append(textFilter)
+def parse(self, file):
+        self.handler.start("document")
+        for block in blocks(file):
+            for textFilter in self.filters:
+                print block
+                block = textFilter(block, self.handler)
+            for rule in self.rules:
+                if (rule.condition(block)):
+                    last = rule.action(block, self.handler)
+                    if last: break
+        self.handler.end("documnet")
+block =  def parse(self, file):
+        self.handler.start("document")
+        for block in blocks(file):
+            for textFilter in self.filters:
+                print block
+                block = textFilter(block, self.handler)
+            for rule in self.rules:
+                if (rule.condition(block)):
+                    last = rule.action(block, self.handler)
+                    if last: break
+        self.handler.end("documnet") type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+def parse(self, file):
+        self.handler.start("document")
+        for block in blocks(file):
+            for textFilter in self.filters:
+                print block
+                block = textFilter(block, self.handler)
+            for rule in self.rules:
+                if (rule.condition(block)):
+                    last = rule.action(block, self.handler)
+                    if last: break
+        self.handler.end("documnet")
+class BasicTextParser(Parser):
+    def __init__(self, handler):
+        Parser.__init__(self, handler)
+        self.addRule(TitleRule())
+        self.addRule(HeadingRule())
+        self.addRule(ParagraphRule())
+block =  class BasicTextParser(Parser):
+    def __init__(self, handler):
+        Parser.__init__(self, handler)
+        self.addRule(TitleRule())
+        self.addRule(HeadingRule())
+        self.addRule(ParagraphRule()) type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>
+class BasicTextParser(Parser):
+    def __init__(self, handler):
+        Parser.__init__(self, handler)
+        self.addRule(TitleRule())
+        self.addRule(HeadingRule())
+        self.addRule(ParagraphRule())
+self.addFilter(r'\*(.+?)\*', 'emphasis')
+        #self.addFilter(r'(http://[\.a-zA-Z/]+)', 'url')
+        #self.addFilter(r'([\.a-zA-Z]+@[\.a-zA-Z]+[a-zA-Z]+)', 'mail')
+block =  self.addFilter(r'\*(.+?)\*', 'emphasis')
+        #self.addFilter(r'(http://[\.a-zA-Z/]+)', 'url')
+        #self.addFilter(r'([\.a-zA-Z]+@[\.a-zA-Z]+[a-zA-Z]+)', 'mail') type =  <type 'str'>
+re:  <type 'str'> ,  <type 'function'>

@@ -1,0 +1,17 @@
+import unittest
+from language import *
+import unittest
+
+print 'start'
+class CLangTestCase(unittest.TestCase):
+    def setUp(self):
+        print 'setup'
+        unittest.TestCase.setUp(self)
+        clang = CLan()
+        
+    def testFilter(self):
+        name1 = "xx.c"
+        self.failUnless(clang.filter(name1))
+        
+print __name__
+#if __name__ == '__main__': unittest.main()

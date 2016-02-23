@@ -1,0 +1,8 @@
+from xml.sax.handler import import ContentHandler
+from xml.sax import import parse
+
+class TestHander(ContentHandler):
+    def startElement(self, name, attrs):
+        print name, attrs.keys()
+        
+        

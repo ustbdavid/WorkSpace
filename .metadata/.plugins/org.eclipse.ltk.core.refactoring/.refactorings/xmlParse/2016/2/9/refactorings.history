@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;xmlParse/src/Dispatch.py&apos; to &apos;Dispatcher.py&apos;" description="Rename resource &apos;Dispatch.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Dispatch.py" name="Dispatcher.py" stamp="1456263447390" updateReferences="true"/>
+</session>

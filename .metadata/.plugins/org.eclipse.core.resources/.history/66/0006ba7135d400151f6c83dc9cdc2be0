@@ -1,0 +1,14 @@
+from reportlab.graphics.shapes import *
+from reportlab.graphics.charts.lineplots import LinePlot
+from reportlab.graphics.charts.textlabels import Label
+from reportlab.graphics import renderPDF
+import fileinput
+
+COMMENT_CHAR = '#'
+
+drawing = Drawing(400, 200)
+data = []
+for line in fileinput.input('Predict.txt'):
+    if not line[0] in COMMENT_CHAR:
+        data.append(line.split())
+

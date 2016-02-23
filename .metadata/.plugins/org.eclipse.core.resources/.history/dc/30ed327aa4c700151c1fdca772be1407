@@ -1,0 +1,22 @@
+import sys
+import os
+from language import *
+
+print sys.argv
+
+print os.listdir(sys.argv[1])
+
+x = CLan()
+name = "x.c"
+line1 = "//xxxx"
+line2 = "/*xxxxx*/\n"
+print x.filter(name)
+print x.isSignleComment(line1).group(0)
+print x.isSignleComment(line2).group(0)
+print x.isMultiComment(line2).group(0)
+print x.isMultiCommentBegin(line2).group(0)
+print x.isMultiCommentEnd(line2).group(0)
+
+x = PyLan()
+name = "x.py"
+print x.filter(name)
